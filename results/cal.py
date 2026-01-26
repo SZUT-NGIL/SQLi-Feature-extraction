@@ -1,5 +1,4 @@
 import pandas as pd
-import math
 
 # 读取原始 CSV
 df = pd.read_csv("results/csv/results_raw.csv")
@@ -17,24 +16,10 @@ def calculate_metrics(row):
     # FPR = FP / (FP + TN)
     FPR = FP / (FP + TN) if (FP + TN) != 0 else 0
 
-    # TNR = TN / (TN + FP)
-    TNR = TN / (TN + FP) if (TN + FP) != 0 else 0
-
-    # MCC = (TP*TN - FP*FN) / sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
-    denominator = math.sqrt((TP + FP)*(TP + FN)*(TN + FP)*(TN + FN))
-    MCC = ((TP * TN) - (FP * FN)) / denominator if denominator != 0 else 0
-
-    # F2 = (1 + 2^2) * (PREC * TPR) / (4 * PREC + TPR)
-    PREC = row['PREC']
-    TPR = row['TPR']
-    F2 = (1 + 2**2) * (PREC * TPR) / (4 * PREC + TPR) if (4 * PREC + TPR) != 0 else 0
-
-    return pd.Series([FNR, FPR, TNR, MCC, F2])
+    return pd.Series([FNR, FPR])
 
 # 计算新增指标
-df[['FNR', 'FPR', 'TNR', 'MCC', 'F2']] = df.apply(calculate_metrics, axis=1)
-
-print(df.columns.tolist())
+df[['FNR', 'FPR']] = df.apply(calculate_metrics, axis=1)
 
 # 中文模型 CSV
 metrics = ['ACC','PREC','TPR','F1','FNR','FPR','AUC']
@@ -42,3 +27,4 @@ methods = ['BoW','TF-IDF','Word2Vec','FastText','Bert','Ours']
 df = df[df['Method'].isin(methods)][['Method'] + metrics]
 df.to_csv('results/csv/results.csv', index=False, encoding='utf-8')
 print("已生成 results.csv")
+
