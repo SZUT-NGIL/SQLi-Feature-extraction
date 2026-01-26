@@ -18,7 +18,7 @@ class AcademicPlotter:
         self.colors_pre = ['#1f77b4', '#ff7f0e']
         self.colors_err = ['#d62728', '#9467bd']
         
-        # 散点图形状映射：OurCN 使用元组(5,1)表示五边形
+        # 散点图形状映射
         self.marker_map = {
             'BoW': 'o',
             'TF-IDF': 's',
@@ -100,7 +100,7 @@ class AcademicPlotter:
         for i, name in enumerate(model_names):
             marker = self.marker_map.get(name, 'o')
             color = colors[i]
-            s = 200 if name == 'OurCN' else 180
+            s = 200 if name == 'Ours' else 180
             sc = ax.scatter(fpr_vals[i], fnr_vals[i], marker=marker, s=s,
                             color=color, edgecolors='white', linewidth=1.5,
                             alpha=0.9, zorder=5)
@@ -109,7 +109,7 @@ class AcademicPlotter:
             coord_label = f"{name}\n({fpr_vals[i]:.2f}%, {fnr_vals[i]:.2f}%)"
             xytext = (10, 5)
             fontweight = 'normal'
-            if name == 'OurCN':
+            if name == 'Ours':
                 xytext = (10, -25)
                 fontweight = 'bold'
             elif name == 'Word2Vec':
