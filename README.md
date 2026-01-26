@@ -225,21 +225,21 @@ Reads `results/csv/results_raw.csv`, computes FNR/FPR/TNR/MCC/F2, and writes
 python results/cal.py
 ```
 
-### Plot metrics (results/plot_cn.py)
+### Plot metrics (results/plot.py)
 
-Reads `results/csv/results_cn.csv` and writes plots to `results/plots/`.
+Reads `results/csv/results.csv` and writes plots to `results/plots/`.
 
 ### 图 1：FNR AND FPR
-![FNR AND FPR](results/plots/cn_fnr_fpr.png) 
+![FNR AND FPR](results/plots/fnr_fpr.png) 
 
 ### 图 2：Overall Performance of Various Feature Extraction Methods
-![Overall Performance of Various Feature Extraction Methods](results/plots/cn_model_acc_f1_auc.png) 
+![Overall Performance of Various Feature Extraction Methods](results/plots/model_acc_f1_auc.png) 
 
 ### 图 3：Comparison of Precision and Recall for Different Methods
-![Comparison of Precision and Recall for Different Methods](results/plots/cn_pre_rec.png) 
+![Comparison of Precision and Recall for Different Methods](results/plots/pre_rec.png) 
 
 ### 图 4：Scatter Plot of FNR vs. FPR
-![Scatter Plot of FNR vs. FPR](results/plots/cn_scatter_fnr_fpr.png) 
+![Scatter Plot of FNR vs. FPR](results/plots/scatter_fnr_fpr.png) 
 ```bash
-python results/plot_cn.py
+python results/plot.py
 ```
