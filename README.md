@@ -218,7 +218,7 @@ Outputs:
 
 ### Calculate extra metrics (results/cal.py)
 
-Reads `results/csv/results_raw.csv`, computes FNR/FPR/TNR/MCC/F2, and writes
+Reads `results/csv/results_raw.csv`, computes FNR/FPR, and writes
 `results/csv/results.csv`.
 
 ```bash
