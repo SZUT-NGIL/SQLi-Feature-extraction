@@ -228,9 +228,12 @@ python results/cal.py
 ### Plot metrics (results/plot_cn.py)
 
 Reads `results/csv/results_cn.csv` and writes plots to `results/plots/`.
-![Overall Performance of Various Feature Extraction Methods](cn_fnr_fpr.png) 
+![Overall Performance of Various Feature Extraction Methods](results/plots/cn_fnr_fpr.png) 
+
 ![Overall Performance of Various Feature Extraction Methods](results/plots/cn_model_acc_f1_auc.png) 
+
 ![Comparison of Precision and Recall for Different Methods](results/plots/cn_pre_rec.png) 
+
 ![Scatter Plot of FNR vs. FPR](results/plots/cn_scatter_fnr_fpr.png) 
 ```bash
 python results/plot_cn.py
