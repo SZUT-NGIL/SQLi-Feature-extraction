@@ -229,16 +229,16 @@ python results/cal.py
 
 Reads `results/csv/results.csv` and writes plots to `results/plots/`.
 
-### 图 1：FNR AND FPR
+### Fig. 1：FNR AND FPR
 ![FNR AND FPR](results/plots/fnr_fpr.png) 
 
-### 图 2：Overall Performance of Various Feature Extraction Methods
+### Fig. 2：Overall Performance of Various Feature Extraction Methods
 ![Overall Performance of Various Feature Extraction Methods](results/plots/model_acc_f1_auc.png) 
 
-### 图 3：Comparison of Precision and Recall for Different Methods
+### Fig. 3：Comparison of Precision and Recall for Different Methods
 ![Comparison of Precision and Recall for Different Methods](results/plots/pre_rec.png) 
 
-### 图 4：Scatter Plot of FNR vs. FPR
+### Fig. 4：Scatter Plot of FNR vs. FPR
 ![Scatter Plot of FNR vs. FPR](results/plots/scatter_fnr_fpr.png) 
 ```bash
 python results/plot.py
