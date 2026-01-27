@@ -1,6 +1,6 @@
 # SQLi Features Extraction
 
-Code and experiments for SQLi extraction.
+Code and experiments for SQLi features extraction.
 
 Run all commands from the repository root so relative paths resolve correctly.
 
