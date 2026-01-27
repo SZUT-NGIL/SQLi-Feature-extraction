@@ -73,7 +73,7 @@ Model artifacts:
 - `ours/model/1/scaler_for_numeric.pkl`
 - `ours/model/1/numeric_features/best_threshold.pkl`
 
-### Prediction / evaluation
+### Prediction 
 
 ```bash
 python ours/predict.py
