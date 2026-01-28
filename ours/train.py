@@ -114,7 +114,7 @@ def train_and_save_model(feature_name, train_x, train_y, test_x, test_y):
     this_feature_dir = os.path.join(MODEL_DIR, feature_name)
     os.makedirs(this_feature_dir, exist_ok=True)
 
-    model_name = "FSHBoost"
+    model_name = "XGBoost"
     print(f"\n===== 训练 {model_name} =====")
 
     param_dist = {
