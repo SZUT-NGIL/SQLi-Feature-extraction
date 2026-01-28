@@ -87,13 +87,12 @@ Outputs:
 - Confusion matrices and ROC plots under `ours/model/1/numeric_features/`
 - Appends a row to `results/csv/results_raw.csv`
 
-## fe models (text feature pipelines)
+## fe (different methods of features extraion)
 
 Each `fe/*/train.py` prompts for a training file path.  
-Each `fe/*/predict.py` accepts an optional path argument (or prompts).
+Each `fe/*/predict.py` accepts an optional path argument.
 
-Important: `fe` prediction scripts compute features from **Query** at runtime.
-If you pass a `*_featured.csv`, only the `Query` column is used; extra columns are ignored.
+`fe` prediction scripts compute features from **Query** at runtime.
 
 ### BoW
 
@@ -229,6 +228,9 @@ python results/cal.py
 
 Reads `results/csv/results.csv` and writes plots to `results/plots/`.
 
+```bash
+python results/plot.py
+```
 ### Fig. 1：FNR AND FPR
 ![FNR AND FPR](results/plots/fnr_fpr.png) 
 
@@ -240,6 +242,4 @@ Reads `results/csv/results.csv` and writes plots to `results/plots/`.
 
 ### Fig. 4：Scatter Plot of FNR vs. FPR
 ![Scatter Plot of FNR vs. FPR](results/plots/scatter_fnr_fpr.png) 
-```bash
-python results/plot.py
-```
+
