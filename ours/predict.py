@@ -40,7 +40,7 @@ BASE_DIR = current_file.parents[1]
 MODEL_DIR = os.path.join(BASE_DIR, "ours", "model", "1")
 NUMERIC_FEATURES_DIR = os.path.join(MODEL_DIR, "numeric_features")
 
-MODEL_FILENAME     = "model_FSHBoost.pkl"
+MODEL_FILENAME     = "model_XGBoost.pkl"
 SCALER_FILENAME    = "scaler_for_numeric.pkl"
 THRESHOLD_FILENAME = "best_threshold.pkl"
 
