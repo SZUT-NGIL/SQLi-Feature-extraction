@@ -112,7 +112,7 @@ python results/cal.py
 python results/plot.py
 ```
 
-### 7. 可选实验
+### 7. 消融与跨数据集实验
 
 运行手工特征消融实验：
 
@@ -298,7 +298,7 @@ python results/cal.py
 python results/plot.py
 ```
 
-### 7. Optional experiments
+### 7. feature ablation and cross-dataset experiments
 
 Run the handcrafted-feature ablation study:
 
