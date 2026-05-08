@@ -1,0 +1,2 @@
+﻿model,f1_train_default,f1_test_default,best_threshold,f1_test_best_thr
+XGBoost,0.9982017982017982,0.9959899281917374,0.56,0.996082820369334

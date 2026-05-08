@@ -1,0 +1,26 @@
+﻿{
+  "dataset_name": "syedsaqlainhussain",
+  "source_path": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\Data\\UniEmbed_AE-NET",
+  "source_csv": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\cross_dataset_ours\\runs\\syedsaqlainhussain\\data\\source_preprocessed.csv",
+  "train_csv": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\cross_dataset_ours\\runs\\syedsaqlainhussain\\data\\train_set.csv",
+  "test_csv": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\cross_dataset_ours\\runs\\syedsaqlainhussain\\data\\test_set.csv",
+  "source_rows": 66393,
+  "dedup_rows": 66393,
+  "train_rows": 53114,
+  "test_rows": 13279,
+  "label_distribution_source": {
+    "0": 0.6411519286671787,
+    "1": 0.3588480713328212
+  },
+  "label_distribution_train": {
+    "0": 0.6411492261927175,
+    "1": 0.3588507738072825
+  },
+  "label_distribution_test": {
+    "0": 0.6411627381579939,
+    "1": 0.35883726184200615
+  },
+  "split_test_size": 0.2,
+  "split_random_state": 42,
+  "dedup_applied": false
+}

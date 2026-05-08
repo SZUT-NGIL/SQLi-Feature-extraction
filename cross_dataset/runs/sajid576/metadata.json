@@ -1,0 +1,24 @@
+﻿{
+  "dataset_name": "sajid576",
+  "source_path": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\Data\\deep.csv",
+  "train_csv": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\cross_dataset_ours\\runs\\sajid576\\data\\train_set.csv",
+  "test_csv": "D:\\Users\\13336\\Desktop\\研究生学习\\论文\\SQLi-Feature-extraction\\cross_dataset_ours\\runs\\sajid576\\data\\test_set.csv",
+  "source_rows": 30919,
+  "dedup_rows": 30905,
+  "train_rows": 24724,
+  "test_rows": 6181,
+  "label_distribution_source": {
+    "0": 0.6318768394838126,
+    "1": 0.36812316051618743
+  },
+  "label_distribution_train": {
+    "0": 0.631855686782074,
+    "1": 0.3681443132179259
+  },
+  "label_distribution_test": {
+    "0": 0.6317747937226986,
+    "1": 0.36822520627730143
+  },
+  "split_test_size": 0.2,
+  "split_random_state": 42
+}

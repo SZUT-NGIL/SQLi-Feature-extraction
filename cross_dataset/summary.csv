@@ -1,0 +1,7 @@
+dataset,ACC,TPR,F1,Method
+httpparams,0.9730,0.9620,0.9580,BERT+LSTM[13]
+sajid576,0.9616,0.9223,0.9468,TD-IDF+SQLNN[23]
+syedsaqlainhussain,0.9890,0.9900,0.9891,AE-Net+XGB[21]
+sajid576,0.9945,0.9895,0.9925,Ours
+syedsaqlainhussain,0.9951,0.9887,0.9931,Ours
+httpparams,0.9998,0.9995,0.9998,Ours
