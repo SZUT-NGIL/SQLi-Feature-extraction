@@ -140,7 +140,7 @@ python cross_dataset/predict_external.py --dataset all
 | BERT | 0.9995 | 0.9991 | 0.9995 | 0.9993 | 1.0000 |
 | Ours | 0.9998 | 1.0000 | 0.9995 | 0.9998 | 1.0000 |
 
-从当前仓库内结果看，`ours` 在默认划分上取得了最强或并列最强的整体表现，同时保留了较好的可解释性。
+
 
 ### 主结果对比
 
@@ -326,7 +326,6 @@ Current stored summary from `results/csv/results.csv`:
 | BERT | 0.9995 | 0.9991 | 0.9995 | 0.9993 | 1.0000 |
 | Ours | 0.9998 | 1.0000 | 0.9995 | 0.9998 | 1.0000 |
 
-From the currently checked-in results, `ours` achieves the strongest or tied-strongest overall performance on the default split while remaining relatively interpretable.
 
 ### Main benchmark comparison
 
